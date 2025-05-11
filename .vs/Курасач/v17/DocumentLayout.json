@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\lifeinsurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\lifeinsurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\commonuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\commonuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\dataworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\dataworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\view-model\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\view-model\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\view\\mainwindowforwork.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\view\\mainwindowforwork.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\healthinsurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\models\\healthinsurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|d:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\view\\messagecontactwindowdb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{302BFADC-59A3-46D4-9259-13748499C099}|\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447.csproj|solutionrelative:\u043A\u0443\u0440\u0430\u0441\u0430\u0447\\view\\messagecontactwindowdb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 256,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindowForWork.xaml",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MainWindowForWork.xaml",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MainWindowForWork.xaml",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MainWindowForWork.xaml",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MainWindowForWork.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-21T23:06:41.935Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Policy.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Policy.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Policy.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Policy.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Policy.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:44:27.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Vehicle.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Vehicle.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:40:23.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PolicyType.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\PolicyType.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\PolicyType.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\PolicyType.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\PolicyType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:40:20.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Agent.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Agent.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Agent.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Agent.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Agent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:40:10.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Branch.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Branch.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Branch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:40:09.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Contract.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Contract.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Contract.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Contract.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:39:59.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Payment.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Payment.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Payment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:39:53.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Property.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Property.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Property.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Property.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\Property.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:06:12.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\MainWindow.xaml.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T10:15:50.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LifeInsurance.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\LifeInsurance.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\LifeInsurance.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\LifeInsurance.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\LifeInsurance.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:11:55.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MessageContactWindowDB.xaml",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MessageContactWindowDB.xaml",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MessageContactWindowDB.xaml",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MessageContactWindowDB.xaml",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View\\MessageContactWindowDB.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-08T09:50:31.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HealthInsurance.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\HealthInsurance.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\HealthInsurance.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\HealthInsurance.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\HealthInsurance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:40:52.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CommonUser.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\CommonUser.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\CommonUser.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\CommonUser.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\CommonUser.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCIAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:40:43.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataWorker.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\DataWorker.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\DataWorker.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\DataWorker.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\Models\\DataWorker.cs",
+              "ViewState": "AgIAAAwEAAAAAAAAAAAWwBkEAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:05:01.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View-Model\\DataManager.cs",
+              "RelativeDocumentMoniker": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View-Model\\DataManager.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View-Model\\DataManager.cs",
+              "RelativeToolTip": "\u041A\u0443\u0440\u0430\u0441\u0430\u0447\\View-Model\\DataManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T14:28:53.808Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Курасач.View.MessageWindowDB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курасач.View"
+        mc:Ignorable="d"
+        Title="MessageWindowDB" ResizeMode="NoResize" Height="500" Width="800" Icon="D:\проекты\Курасач\Курасач\img and icons for main window\Icon_for_window.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0" SelectedItem="{Binding SelectedTabItem}">
+            <TabItem Name="VersionUpdateTab">
+                <TabItem.Header>
+                    <TextBlock Text="Обновления"/>
+                </TabItem.Header>
+                <ListView x:Name="ViewAllVersionUpdate" ItemsSource = "{Binding AllVersionUpdate}"
+                           SelectedItem="{Binding SelectedVersionUpdate}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Номер обновления" DisplayMemberBinding="{Binding Path=NumberOfUpdate}"/>
+                            <GridViewColumn Header="Дата обновления" DisplayMemberBinding="{Binding Path=DateOfUpdate}"/>
+                            <GridViewColumn Header="Содержание" DisplayMemberBinding="{Binding Path=ContentUpdate}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        </TabControl>
+        <Grid/>
+    </Grid>
+</Window>

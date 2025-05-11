@@ -1,0 +1,432 @@
+﻿<Window x:Class="Курасач.View.MainWindowForWork"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курасач.View"
+        mc:Ignorable="d"
+        Title="Страховое агентство" Height="650" Width="1000"
+        ResizeMode="NoResize" Icon="D:\проекты\Курасач\Курасач\img and icons for main window\3327068.png">
+    <Window.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true" CornerRadius="10,10,10,10">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0" SelectedItem="{Binding SelectedTabItem}">
+            <TabItem Name="AgentTab">
+                <TabItem.Header>
+                    <TextBlock Text="Агенты"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllAgent" ItemsSource ="{Binding AllAgents}"
+                          SelectedItem="{Binding SelectedAgent}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding Path=FullAgentsName}"/>
+                            <GridViewColumn Header="Контактный телефон" DisplayMemberBinding="{Binding Path=ContactNumber}"/>
+                            <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Path=Email}"/>
+                            <GridViewColumn Header="Дата принятия на работу" DisplayMemberBinding="{Binding Path=HireDate,StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Статус" DisplayMemberBinding="{Binding Path=Stat}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="BranchTab">
+                <TabItem.Header>
+                    <TextBlock Text="Филлиалы"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllBranch" ItemsSource ="{Binding AllBranch}"
+                          SelectedItem="{Binding SelectedBranch}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Path=Name}"/>
+                            <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding Path=Address}"/>
+                            <GridViewColumn Header="Число сотрудников" DisplayMemberBinding="{Binding Path=EmployeeCount}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        
+        
+            <TabItem Name="UserTab">
+                <TabItem.Header>
+                    <TextBlock Text="Пользователи"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllUsers" ItemsSource ="{Binding AllUsers}"
+                          SelectedItem="{Binding SelectedCommonUser}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ФИО пользователя" DisplayMemberBinding="{Binding Path=FullName}"/>
+                            <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding Path=Address}"/>
+                            <GridViewColumn Header="Номер телефона" DisplayMemberBinding="{Binding Path=PhoneNumber}"/>
+                            <GridViewColumn Header="Id паспорта" DisplayMemberBinding="{Binding Path=PassportId}"/>
+                            <GridViewColumn Header="Номер паспорта" DisplayMemberBinding="{Binding Path=PassportNumber}"/>
+                            <GridViewColumn Header="Номер карты" DisplayMemberBinding="{Binding Path=CardsNumber}"/>
+                            <GridViewColumn Header="Логин" DisplayMemberBinding="{Binding Path=UsersLogin}"/>
+                            <GridViewColumn Header="Пароль" DisplayMemberBinding="{Binding Path=UsersPassword}"/>
+                            <GridViewColumn Header="Mail" DisplayMemberBinding="{Binding Path=UsersMail}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        
+        
+            <TabItem Name="ContractTab">
+                <TabItem.Header>
+                    <TextBlock Text="Договора"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllContracts" ItemsSource ="{Binding AllContracts}"
+                          SelectedItem="{Binding SelectedContract}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Срок действия" DisplayMemberBinding="{Binding Path=ContractDate, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Описание" DisplayMemberBinding="{Binding Path=Terms}"/>
+                            <GridViewColumn Header="Число пользователей заключивших договор" DisplayMemberBinding="{Binding Path= UserContract.Count}"/>
+                            <GridViewColumn Header="ФИО пользователей заключивших договор" DisplayMemberBinding="{Binding Path= UserNameContract.FullName}"/>
+                            <GridViewColumn Header="Имена агентов заключивших договор" DisplayMemberBinding="{Binding Path= AgentsContract.FullAgentsName}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="HealthInsuranceTab">
+                <TabItem.Header>
+                    <TextBlock Text="Страхование здоровья"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllHealthInsurance" ItemsSource = "{Binding AllHealthInsurance}"
+                           SelectedItem="{Binding SelectedHealthInsurance}">
+                    <ListView.View>
+                        <GridView>
+                                <GridViewColumn Header="Медицинские условия" DisplayMemberBinding="{Binding Path=MedicalConditions}"/>
+                                <GridViewColumn Header="Лимит покрытия" DisplayMemberBinding="{Binding Path=CoverageLimit}"/>
+                            <GridViewColumn Header="Число пользователей заключивших договор" DisplayMemberBinding="{Binding Path= UserHealthIns.Count}"/>
+
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="InsuranceClaimTab">
+                <TabItem.Header>
+                    <TextBlock Text="Страховые случаи"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllInsuranceClaims" ItemsSource = "{Binding AllInsuranceClaims}"
+                           SelectedItem="{Binding SelectedInsuranceClaim}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Дата инцидента" DisplayMemberBinding="{Binding Path=IncidentDate, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Описание" DisplayMemberBinding="{Binding Path=Description}"/>
+                            <GridViewColumn Header="Статус случая" DisplayMemberBinding="{Binding Path=ClaimStatus}"/>
+                            <GridViewColumn Header="Относится к полису" DisplayMemberBinding="{Binding Path= ClaimPolicy.PolicyType}"/>
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="LifeInsuranceTab">
+                <TabItem.Header>
+                    <TextBlock Text="Страхование жизни"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllLifeInsurance" ItemsSource = "{Binding AllLifeInsurance}"
+                           SelectedItem="{Binding SelectedLifeInsurance}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Страховая сумма" DisplayMemberBinding="{Binding Path=InsuredAmount}"/>
+                            <GridViewColumn Header="Срок действия" DisplayMemberBinding="{Binding Path=ExpirationDate, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="ФИО пользователей заключивших договор" DisplayMemberBinding="{Binding Path= UserLifeIns.FullName}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            
+            <TabItem Name="PaymentTab">
+                <TabItem.Header>
+                    <TextBlock Text="Выплаты"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllPayment" ItemsSource = "{ Binding AllPayment}"
+                           SelectedItem="{Binding SelectedPayment}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Номер полиса" DisplayMemberBinding="{Binding Path=IdPolices}"/>
+                            <GridViewColumn Header="Сумма" DisplayMemberBinding="{Binding Path=Summa}"/>
+                            <GridViewColumn Header="Дата платежа" DisplayMemberBinding="{Binding Path=DateOfPay, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Тип оплаты" DisplayMemberBinding="{Binding Path=TypeOfPay}"/>
+                            <GridViewColumn Header="Имена клиентов, которым осуществлялась выплата" DisplayMemberBinding="{Binding Path= ClientPayment.FullName}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="PolicyTab">
+                <TabItem.Header>
+                    <TextBlock Text="Полисы"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllPolicy" ItemsSource = "{Binding AllPolicy}"
+                           SelectedItem="{Binding SelectedPolicy}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Тип полиса" DisplayMemberBinding="{Binding Path=PolicyType}"/>
+                            <GridViewColumn Header="Сумма страхового покрытия" DisplayMemberBinding="{Binding Path=CoverageAmount}"/>
+                            <GridViewColumn Header="Премиум" DisplayMemberBinding="{Binding Path=Premium}"/>
+                            <GridViewColumn Header="Дата начала" DisplayMemberBinding="{Binding Path=StartDate, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Дата конца" DisplayMemberBinding="{Binding Path=EndDate, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Статус" DisplayMemberBinding="{Binding Path=Stat}"/>
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="PolicyTypeTab">
+                <TabItem.Header>
+                    <TextBlock Text="Типы полисов"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllPolicyType" ItemsSource = "{Binding AllPolicyType}"
+                           SelectedItem="{Binding SelectedPolicyType}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Path=Name}"/>
+                            <GridViewColumn Header="Описание" DisplayMemberBinding="{Binding Path=Description}"/>
+                            <GridViewColumn Header="Базовая цена" DisplayMemberBinding="{Binding Path=BasePrice}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            
+            <TabItem Name="PropertyTab">
+                <TabItem.Header>
+                    <TextBlock Text="Недвижимость"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllProperty" ItemsSource = "{Binding AllProperty}"
+                           SelectedItem="{Binding SelectedProperty}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ФИО клиента" DisplayMemberBinding="{Binding Path= UserProperty.FullName}"/>
+                            <GridViewColumn Header="Тип недвижимости" DisplayMemberBinding="{Binding Path=PropertyType}"/>
+                            <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding Path=Address}"/>
+                            <GridViewColumn Header="Страховая стоимость" DisplayMemberBinding="{Binding Path=InsuredValue}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="ReviewTab">
+                <TabItem.Header>
+                    <TextBlock Text="Отзывы"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllReview" ItemsSource = "{Binding AllReview}"
+                           SelectedItem="{Binding SelectedReview}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Оценка" DisplayMemberBinding="{Binding Path=Rating}"/>
+                            <GridViewColumn Header="Комментарий" DisplayMemberBinding="{Binding Path=Comments}"/>
+                            <GridViewColumn Header="Дата отзыва" DisplayMemberBinding="{Binding Path=ReviewDate, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                            <GridViewColumn Header="Почта клиента" DisplayMemberBinding="{Binding Path= ClientReview.UsersMail}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="VehicleTab">
+                <TabItem.Header>
+                    <TextBlock Text="Транспортные средства"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllVehicle" ItemsSource = "{Binding AllVehicle}"
+                           SelectedItem="{Binding SelectedVehicle}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Марка" DisplayMemberBinding="{Binding Path=Mark}"/>
+                            <GridViewColumn Header="Модель" DisplayMemberBinding="{Binding Path=Model}"/>
+                            <GridViewColumn Header="Год производства" DisplayMemberBinding="{Binding Path=YearOfMade}"/>
+                            <GridViewColumn Header="Регистрационный номер" DisplayMemberBinding="{Binding Path=RegistrationNumber}"/>
+                            <GridViewColumn Header="Страховая стоимость" DisplayMemberBinding="{Binding Path=InsuredValue}"/>
+                            <GridViewColumn Header="ФИО клиента,которому принадлежит транспорт" DisplayMemberBinding="{Binding Path= UserVehicle.FullName}"/>
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="VersionUpdateTab">
+                <TabItem.Header>
+                    <TextBlock Text="Обновления"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditItem}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteItem}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllVersionUpdate" ItemsSource = "{Binding AllVersionUpdate}"
+                           SelectedItem="{Binding SelectedVersionUpdate}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Номер обновления" DisplayMemberBinding="{Binding Path=NumberOfUpdate}"/>
+                            <GridViewColumn Header="Дата обновления" DisplayMemberBinding="{Binding Path=DateOfUpdate}"/>
+                            <GridViewColumn Header="Содержание" DisplayMemberBinding="{Binding Path=ContentUpdate}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button Style="{DynamicResource ButtonStyle1}" FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый агент" Command="{Binding OpenAddNewAgentWnd}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый Филлиал" Command="{Binding OpenAddNewBranchWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый пользователь" Command="{Binding OpenAddCommonUsersWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый договор" Command="{Binding OpenAddNewContractWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новое страхование здоровья" Command="{Binding OpenAddHealthIsuranceWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новая заявка" Command="{Binding OpenAddIsuranceClaimWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новое страхование жизни" Command="{Binding OpenAddLifeIsuranceWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новая выплата" Command="{Binding OpenAddPaymentsWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый полис" Command="{Binding OpenAddPoliceWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый тип полиса" Command="{Binding OpenAddPolicyTypeWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новая недвижимость" Command="{Binding OpenAddPropertyWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый отзыв" Command="{Binding OpenAddReviewWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+            <Button FontFamily="Bahnschrift SemiLight" BorderBrush="#FF023EFA" Background="White" Padding="10" Margin="7" Content="Новый транспорт" Command="{Binding OpenAddVehicleWnd}" Style="{DynamicResource ButtonStyle1}" BorderThickness="2,2,2,2"/>
+        </StackPanel>
+    </Grid>
+</Window>

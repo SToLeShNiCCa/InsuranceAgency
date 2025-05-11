@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="3327068.png" />
+    <None Remove="av2b1r2kc.png" />
+    <None Remove="icon.png" />
+    <None Remove="img and icons for main window\img_for_register.png" />
+    <None Remove="img and icons for main window\img_Sign_up.png" />
+    <None Remove="img_for_register.png" />
+    <None Remove="img_Sign_up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img and icons for main window\3327068.png" />
+    <Resource Include="img and icons for main window\av2b1r2kc.png" />
+    <Resource Include="img and icons for main window\icon.png" />
+    <Resource Include="img and icons for main window\img_for_register.png" />
+    <Resource Include="img and icons for main window\img_Sign_up.png" />
+    <Resource Include="img and icons for main window\img_for_exit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\EditAgentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditBranchWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditContractWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditHealthInsuranceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditInsuranceClaimWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditLifeInsuranceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditPaymentsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditPoliceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditPolicyTypeWondow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditPropertyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditVehicleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Edit_Form.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MessageContactWindowDB.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
